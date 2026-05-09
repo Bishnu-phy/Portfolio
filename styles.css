@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #e7e7e7;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(to right, #000000, #001f2f);
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    background: #c4002f;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero-right span {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.role {
+    margin: 15px 0;
+    color: #aaa;
+}
+
+.menu p {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu p:hover {
+    color: #00c3ff;
+}
+
+/* NAVBAR */
+.nav {
+    background: #111;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: #aaa;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* HIRE BOX */
+.hire-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0b1d26;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hire-box button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #00cfff;
+    border: none;
+    cursor: pointer;
+}
+/* ABOUT */
+.about {
+    display: flex;
+    padding: 80px;
+    background: linear-gradient(to right, #000000, #001f2f);
+}
+
+/* LEFT */
+.about-left {
+    width: 40%;
+    text-align: center;
+}
+
+.about-left img {
+    width: 260px;
+    margin-top: 20px;
+}
+
+.hello {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.about-left h2 {
+    margin-top: 10px;
+}
+
+.location {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* RIGHT */
+.about-right {
+    width: 60%;
+    padding-left: 50px;
+}
+
+.about-right h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-right p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.skill {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90px;
+}
+
+.skill img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+/* LANG */
+.lang p {
+    margin-top: 5px;
+}
+
+/* SKILL BARS */
+
+.skills-bars {
+    margin-top: 20px;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+/* Individual skill levels */
+
+.python {
+    width: 80%;
+    background: #4caf50;
+    
+    }
+.Java {
+    width: 50%;
+    background: white ;
+}
+.html {
+    width: 90%;
+    background: #ff4c4c;
+}
+
+.css {
+    width: 85%;
+    background: #4c9aff;
+}
+
+.js {
+    width: 35%;
+    background: #f7df1e;
+
+}
+
+.django {
+    width: 30%;
+    background: #00c3ff;
+}
+/* LANGUAGE LEVELS */
+
+.english {
+    width: 80%;
+    background: #00d4ff;
+}
+
+.japanese {
+    width: 65%;
+    background: #ff6b6b;
+}
+
+.nepali {
+    width: 100%;
+    background: #4caf50;
+}
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #171515;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+.github-btn:hover {
+    background: #00c3ff;
+    color: black;
+}
+.github-section {
+    padding: 50px;
+    color: white;
+}
+
+.github-profile {
+    margin: 20px 0;
+}
+
+.github-icon {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.github-icon:hover {
+    transform: scale(1.2);
+}
+
+.repo-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.repo-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+}
+
+.repo-card a {
+    color: #00bfff;
+    text-decoration: none;
+}
+.education {
+    margin-top: 40px;
+    color: #e7e7e7;
+}
+
+/* Title */
+.education h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+/* School link */
+.education a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+    padding-right:20px;
+}
+
+.education a:hover {
+    color: #00bfff;
+}
+
+/* Course text */
+.education p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+.about {
+    padding: 50px;
+    background: #001f2f;
+    color: white;
+}
+
+/* FLEX LAYOUT */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* LEFT & RIGHT */
+.left, .right {
+    width: 50%;
+}
+
+/* TITLE */
+.section-title {
+    color: #00cfff;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* PROGRESS BAR */
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* COLORS */
+.english {
+    width: 80%;
+    background: #00cfff;
+}
+
+.japanese {
+    width: 65%;
+    background: #ff6b6b;
+}
+
+.nepali {
+    width: 100%;
+    background: #4caf50;
+}
+/*  ADDING  THIS CSS FOR ANIMATIONS  FOR THE BEGINING  OF THE TEXT */
+/* NAV BUTTON ANIMATION */
+.nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* ACTIVE CLICK (HIRE ME) */
+#hireBtn.active {
+    background: white;
+    color: black;
+}
+
+/* TEXT ANIMATION */
+.role {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s forwards;
+}
+
+.role:nth-child(1) { animation-delay: 0.3s; }
+.role:nth-child(2) { animation-delay: 0.6s; }
+.role:nth-child(3) { animation-delay: 0.9s; }
+.role:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* BUTTON CLICK EFFECT */
+.nav a:active {
+    transform: scale(0.9);
+}
+
+/* POPUP ANIMATION */
+.hire-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background: #0b1d26;
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.hire-box.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
